@@ -8,18 +8,37 @@
     <meta name="description" content="feedback">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="resource/css/style.css">
+
+    <style>
+        :not(.skip-link):focus {
+            outline: 5px solid rgb(131, 234, 248);
+        }
+
+        .skip-link {
+            color: white;
+            padding: .5rem;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <a class="skip-link" href="#survey">Skip to survey</a>
+        <a class="skip-link" href="#footer">Skip to footer</a>
+    </header>
     <a href="https://www.linkedin.com/in/zen-park/">
         <h1 class="neon">Zen Technology</h1>
     </a>
+
     <div class="content">
         <div class="left-section">
             <div class="left-background-color"></div>
 
             <form style="padding-left: 20px;">
-                <h2>Rate Us</h2>
+                <h2 id="survey">Rate Us</h2>
                 <fieldset class="star-rating">
                     <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars"></label>
                     <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars"></label>
@@ -29,20 +48,14 @@
                 </fieldset> <br><br><br><br>
                 <!-- I will have to replace these breaks with margins instead  -->
 
-
-
                 <div class="form-group">
                     <h3>Tell us about your experience</h3>
                     <textarea id="review" name="review" required></textarea>
                     <label for="name">
-
                         <em>What did you like? What about dislikes?</em> <br><br>
                         <em>How are we doing well, and how can we improve?</em> <br>
-
-
                     </label>
                 </div>
-
 
                 <div class="form-group">
                     <h3>How long have you been with us?</h3>
@@ -105,18 +118,14 @@
                 <input type="submit" value="Submit Review">
             </form>
 
-
-
         </div>
         <div style="clear: both;"></div>
-
-
 
         <div class="footer">
             Copyright © 1996-2023, Zen Technology, LLC. "Zen Technology" and logo are registered trademarks of Zen
             Technology, LLC <br><br>
 
-            <div class="links">
+            <div id="footer" class="links">
                 <a href="https://www.linkedin.com/in/zen-park/">Terms of Use</a>
                 <div>|</div>
                 <a href="https://www.linkedin.com/in/zen-park/">Privacy & Cookies</a>
@@ -129,12 +138,7 @@
                 <div>|</div>
                 <a href="https://www.linkedin.com/in/zen-park/">Contact Us</a>
             </div>
-
         </div>
-
-
-
-
     </div>
 </body>
 
