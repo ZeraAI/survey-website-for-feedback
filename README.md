@@ -9,9 +9,13 @@ Nobody wants to look at a boring template feedback site.
 
 Let's give them something better.
 
-## Sample run
-[insert gif here]
+And let's make it accessible.
 
+## Website Design
+![image](https://user-images.githubusercontent.com/43397999/222554073-d1b833b9-6113-4625-b35c-48165cb89918.png)
+
+## Sample Run
+![samplerun4](https://user-images.githubusercontent.com/43397999/222555473-d079af1f-6be5-45e4-94a4-7f6b5f029e12.gif)
 
 
 ## Like what you see?
