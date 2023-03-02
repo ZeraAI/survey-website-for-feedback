@@ -1,0 +1,323 @@
+h1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 2px;
+  background-color: #fff;
+  color: #000;
+}
+
+.neon {
+  color: black;
+  transition: color 2s ease-in-out;
+  animation: revert-bg 2s ease-in-out forwards;
+}
+
+.neon:hover {
+  color:#39FF14;
+  background-color: #000;
+  animation: normal;
+}
+
+@keyframes revert-bg {
+  100% {
+    background-color: #fff;
+  }
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: auto;
+  transition: font-size 0.2s ease-in-out;
+}
+
+h2:hover {
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+body {
+  background-color: #D9D9D9;
+  padding: 30px;
+  background-image: url(../images/image.jpg);
+  color: rgb(241, 242, 238);
+  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+  text-shadow: 0.25px 0.25px #000;
+}
+
+.left-section {
+  float: left;
+  width: 65%;
+  padding: 30px;
+  padding-left: 355px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  height: 600px;
+}
+
+.star-rating {
+  border: none;
+  float: left;
+}
+
+.star-rating>input {
+  display: none;
+}
+
+.star-rating>label {
+  float: right;
+  width: 1.5em;
+  padding: 0 .1em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  color: rgb(22, 10, 88);
+  font-size: 36px;
+}
+
+.star-rating>input:checked~label,
+.star-rating:not(:checked)>label:hover,
+.star-rating:not(:checked)>label:hover~label {
+  color: goldenrod;
+}
+
+.star-rating>label:before {
+  content: "★";
+}
+
+.star-rating input[type="radio"]:checked~label:before {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    color: goldenrod;
+  }
+  to {
+    color: #edba00;
+  }
+}
+
+
+
+form {
+  /* width: 50%; */
+  margin: 0 auto;
+  /* padding: 20px; */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+  padding-right: 45px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* When I uncomment this, the star rating disappears.*/
+/* label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: #ccc;
+  transition: all 0.3s;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+  top: -20px;
+  left: 10px;
+  font-size: 12px;
+  color: #4CAF50;
+} */
+
+input[required],
+textarea[required] {
+  box-shadow: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+
+/* make media class for smaller screens to look better */
+.right-section {
+  float: left;
+  width: 35%;
+  padding-left: 35px;
+  padding-right: 185px;
+  padding-top: 50px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 55px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.links div {
+  margin: 0 10px;
+}
+
+
+
+/* media */
+@media only screen and (max-width: 505px) and (min-width: 250px) {
+  .left-section {
+    float: left;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .right-section {
+    float: left;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    text-align: justify;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .left-section {
+    float: left;
+    width: 65%;
+    padding-left: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .right-section {
+    float: left;
+    width: 35%;
+    padding-left: 35px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    text-align: justify;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 899px) and (min-width: 420px) {
+  .left-section {
+    float: left;
+    padding-left: 20px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .right-section {
+    float: left;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    text-align: justify;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 900px) {
+  .left-section {
+    float: left;
+    padding-left: 20px;
+    /* width: 100%; */
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .right-section {
+    float: left;
+    /* width: 100%; */
+    padding-left: 35px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    text-align: justify;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
