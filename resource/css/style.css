@@ -18,7 +18,8 @@ h1 {
 }
 
 .neon:hover {
-  color:#39FF14;
+  /* color:#39FF14; */
+  color:#fff;
   background-color: #000;
   animation: normal;
 }
