@@ -8,6 +8,9 @@ At the core of our website is a deep commitment to earning and maintaining the t
 ## Website Design
 ![image](https://user-images.githubusercontent.com/43397999/222554073-d1b833b9-6113-4625-b35c-48165cb89918.png)
 
+## Mobile Design
+![image](https://user-images.githubusercontent.com/43397999/223883539-14633c0d-011f-4c9a-b8fb-2dc69a50535b.png)
+
 ## Sample Run
 ![samplerun4](https://user-images.githubusercontent.com/43397999/222555473-d079af1f-6be5-45e4-94a4-7f6b5f029e12.gif)
 
