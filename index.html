@@ -1,145 +1,171 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>feedback</title>
-    <meta name="description" content="feedback">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="resource/css/style.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Send us your feedback</title>
+    <meta name="description" content="feedback" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="resource/css/style.css" />
 
     <style>
-        :not(.skip-link):focus {
-            outline: 5px solid rgb(131, 234, 248);
-        }
+      :not(.skip-link):focus {
+        outline: 5px solid rgb(131, 234, 248);
+      }
 
-        .skip-link {
-            color: white;
-            padding: .5rem;
-            top: 0;
-            left: 0;
-            position: absolute;
-        }
+      .skip-link {
+        color: white;
+        padding: 0.5rem;
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <header>
-        <a class="skip-link" href="#survey">Skip to survey</a>
-        <a class="skip-link" href="#footer">Skip to footer</a>
-    </header>
-    <a href="https://www.linkedin.com/in/zen-park/">
-        <h1 class="neon">Zen Technology</h1>
-    </a>
+  <header>
+    <a class="skip-link" href="#survey">Skip to survey</a>
+    <a class="skip-link" href="#footer">Skip to footer</a>
+  </header>
+  <a href="/">
+    <h1 class="neon">Zen Technology</h1>
+  </a>
 
+  <body>
     <div class="content">
-        <div class="left-section">
-            <div class="left-background-color"></div>
+      <div class="left-section">
+        <div class="left-background-color"></div>
 
-            <form style="padding-left: 20px;">
-                <h2 id="survey">Rate Us</h2>
-                <fieldset class="star-rating">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars"></label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars"></label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars"></label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars"></label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"></label>
-                </fieldset> <br><br><br><br>
-                <!-- I will have to replace these breaks with margins instead  -->
+        <form style="padding-left: 20px">
+          <h2 id="survey">Rate Us</h2>
+          <fieldset class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              title="5 stars"
+            ></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              title="4 stars"
+            ></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              title="3 stars"
+            ></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              title="2 stars"
+            ></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              title="1 star"
+            ></label>
+          </fieldset>
+          <br /><br /><br /><br />
+          <!-- I will have to replace these breaks with margins instead  -->
 
-                <div class="form-group">
-                    <h3>Tell us about your experience</h3>
-                    <textarea id="review" name="review" required></textarea>
-                    <label for="name">
-                        <em>What did you like? What about dislikes?</em> <br><br>
-                        <em>How are we doing well, and how can we improve?</em> <br>
-                    </label>
-                </div>
+          <div class="form-group">
+            <h3>Tell us about your experience</h3>
+            <textarea id="review" name="review" required></textarea>
+            <label for="name">
+              <em>What did you like? What about dislikes?</em> <br /><br />
+              <em>How are we doing well, and how can we improve?</em> <br />
+            </label>
+          </div>
 
-                <div class="form-group">
-                    <h3>How long have you been with us?</h3>
-                    <!-- without using javascript, not possible to switch to dd/mm 
+          <div class="form-group">
+            <h3>How long have you been with us?</h3>
+            <!-- without using javascript, not possible to switch to dd/mm 
                         instead of default mm/dd -->
-                    <input type="date" id="date" name="date" required>
-                </div>
+            <!-- answer: depending on computer's region, it changes automatically -->
+            <input type="date" id="date" name="date" required />
+          </div>
 
-                <div class="form-group">
-                    <h3>How can we improve?</h3>
-                    <textarea id="review" name="review" required></textarea>
-                    <label for="review"><em>All suggestions are warmly accepted!</em></label>
-                </div>
+          <div class="form-group">
+            <h3>How can we improve?</h3>
+            <textarea id="review" name="review" required></textarea>
+            <label for="review"
+              ><em>All suggestions are warmly accepted!</em></label
+            >
+          </div>
 
-                <div class="form-group">
-                    <h3>How easy was our website to use?</h3>
-                    <textarea id="review" name="review" required></textarea>
-                </div>
+          <div class="form-group">
+            <h3>How easy was our website to use?</h3>
+            <textarea id="review" name="review" required></textarea>
+          </div>
 
-                <div class="form-group">
-                    <h3>Are there any new features or products you would like to see us offer?</h3>
-                    <textarea id="review" name="review" required></textarea>
-                </div>
+          <div class="form-group">
+            <h3>
+              Are there any new features or products you would like to see us
+              offer?
+            </h3>
+            <textarea id="review" name="review" required></textarea>
+          </div>
 
-                <div class="form-group">
-                    <h3 class="bounce">How satisfied were you with the value for money of the product/service?</h3>
-                    <textarea id="review" name="review" required></textarea>
-                    <label for="review"><em><b>You have reached the end!</b></em></label>
-                </div>
+          <div class="form-group">
+            <h3 class="bounce">
+              How satisfied were you with the value for money of the
+              product/service?
+            </h3>
+            <textarea id="review" name="review" required></textarea>
+            <label for="review"
+              ><em><b>You have reached the end!</b></em></label
+            >
+          </div>
 
-                <!-- since I want the submit radio to be on the right,
+          <!-- since I want the submit radio to be on the right,
                 I commented this out. but if I were to uncomment
                 the code below, the input would function as intended -->
-                <!-- <input type="submit" value="Submit Review"> -->
+          <!-- <input type="submit" value="Submit Review"> -->
+        </form>
+      </div>
 
-            </form>
-        </div>
+      <div class="break"></div>
 
-        <div class="right-section">
-            <h3>Thank you</h3>
-            <p><em>Thank you for choosing to spend your time with us.</em> <br><br>
+      <div class="right-section">
+        <h3>Thank you</h3>
+        <p>
+          <em>Thank you for choosing to spend your time with us.</em>
+          <br /><br />
 
-                <b>We hope</b> that your experience was a positive one and
-                that you had everything you needed. <br><br>
+          <b>We hope</b> that your experience was a positive one and that you
+          had everything you needed. <br /><br />
 
+          <b>We read</b> <em>each</em> and <em>every</em> review, so
+          <em>your</em> review matters very much to us! <br /><br />
 
-                <b>We read</b> <em>each</em> and <em>every</em> review, so <em>your</em> review matters very much to us!
-                <br><br>
+          <em>Zen</em>, <br />
+          Owner of <b>Zen Technology</b>
+        </p>
 
-                <em>Zen</em>,
-                <br> Owner of <b>Zen Technology</b>
-            </p>
-
-            <!-- javascript is needed to give confirmation when submitting form -->
-            <form>
-                <!-- <img src="resource/images/work.jpg" alt="computer" style="width: auto; 
+        <!-- javascript is needed to give confirmation when submitting form -->
+        <form>
+          <!-- <img src="resource/images/work.jpg" alt="computer" style="width: auto; 
                 height: auto;
                 max-width: 350px;
                 max-height: 350px"> -->
-                <input type="submit" value="Submit Review">
-            </form>
+          <input type="submit" value="Submit Review" />
+        </form>
+      </div>
+      <div style="clear: both"></div>
 
+      <div class="footer">
+        Copyright © 1996-2023, Zen Technology, LLC. "Zen Technology" and logo
+        are registered trademarks of Zen Technology, LLC <br /><br />
+
+        <div id="footer" class="links">
+          <a href="https://www.linkedin.com/in/zen-park/">Terms of Use</a>
+          <div>|</div>
+          <a href="https://www.linkedin.com/in/zen-park/">Privacy & Cookies</a>
+          <div>|</div>
+          <a href="https://www.linkedin.com/in/zen-park/">FAQ</a>
+          <div>|</div>
+          <a href="https://www.linkedin.com/in/zen-park/">Investor Relations</a>
+          <div>|</div>
+          <a href="https://www.linkedin.com/in/zen-park/">Work with us</a>
+          <div>|</div>
+          <a href="https://www.linkedin.com/in/zen-park/">Contact Us</a>
         </div>
-        <div style="clear: both;"></div>
-
-        <div class="footer">
-            Copyright © 1996-2023, Zen Technology, LLC. "Zen Technology" and logo are registered trademarks of Zen
-            Technology, LLC <br><br>
-
-            <div id="footer" class="links">
-                <a href="https://www.linkedin.com/in/zen-park/">Terms of Use</a>
-                <div>|</div>
-                <a href="https://www.linkedin.com/in/zen-park/">Privacy & Cookies</a>
-                <div>|</div>
-                <a href="https://www.linkedin.com/in/zen-park/">FAQ</a>
-                <div>|</div>
-                <a href="https://www.linkedin.com/in/zen-park/">Investor Relations</a>
-                <div>|</div>
-                <a href="https://www.linkedin.com/in/zen-park/">Work with us</a>
-                <div>|</div>
-                <a href="https://www.linkedin.com/in/zen-park/">Contact Us</a>
-            </div>
-        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

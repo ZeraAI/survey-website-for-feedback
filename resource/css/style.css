@@ -19,7 +19,7 @@ h1 {
 
 .neon:hover {
   /* color:#39FF14; */
-  color:#fff;
+  color: #fff;
   background-color: #000;
   animation: normal;
 }
@@ -49,11 +49,11 @@ h2:hover {
 }
 
 body {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   padding: 30px;
   background-image: url(../images/image.jpg);
   color: rgb(241, 242, 238);
-  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
   text-shadow: 0.25px 0.25px #000;
 }
 
@@ -73,14 +73,14 @@ body {
   float: left;
 }
 
-.star-rating>input {
+.star-rating > input {
   display: none;
 }
 
-.star-rating>label {
+.star-rating > label {
   float: right;
   width: 1.5em;
-  padding: 0 .1em;
+  padding: 0 0.1em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -89,17 +89,17 @@ body {
   font-size: 36px;
 }
 
-.star-rating>input:checked~label,
-.star-rating:not(:checked)>label:hover,
-.star-rating:not(:checked)>label:hover~label {
+.star-rating > input:checked ~ label,
+.star-rating:not(:checked) > label:hover,
+.star-rating:not(:checked) > label:hover ~ label {
   color: goldenrod;
 }
 
-.star-rating>label:before {
+.star-rating > label:before {
   content: "★";
 }
 
-.star-rating input[type="radio"]:checked~label:before {
+.star-rating input[type="radio"]:checked ~ label:before {
   animation: glow 1s ease-in-out infinite alternate;
 }
 
@@ -111,8 +111,6 @@ body {
     color: #edba00;
   }
 }
-
-
 
 form {
   /* width: 50%; */
@@ -141,7 +139,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #4CAF50;
+  border-color: #4caf50;
 }
 
 /* When I uncomment this, the star rating disappears.*/
@@ -185,7 +183,6 @@ textarea[required] {
   animation: bounce 1s ease-in-out infinite;
 }
 
-
 /* make media class for smaller screens to look better */
 .right-section {
   float: left;
@@ -198,7 +195,7 @@ textarea[required] {
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 14px 20px;
   border: none;
@@ -224,14 +221,101 @@ input[type="submit"]:hover {
   margin: 0 10px;
 }
 
-
-
 /* media */
-@media only screen and (max-width: 505px) and (min-width: 250px) {
+/* iphone se */
+@media screen and (max-width: 376px) {
+  body {
+    padding-left: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+  }
+
   .left-section {
     float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    width: 100%;
+    overflow-y: unset;
+    min-height: 1250px;
+    min-width: fit-content;
+  }
+
+  .break {
+    clear: both;
+  }
+
+  .right-section {
+    float: left;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    text-align: left;
+    min-width: fit-content;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 496px) and (min-width: 376.1px) {
+  body {
     padding-left: 0%;
-    padding-right: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+  }
+
+  .left-section {
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 1250px;
+    min-width: fit-content;
+  }
+
+  .break {
+    clear: both;
+  }
+
+  .right-section {
+    float: left;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    text-align: justify;
+    margin-top: 20px;
+    min-width: fit-content;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 524px) and (min-width: 496.1px) {
+  body {
+    padding-left: 0%;
+  }
+
+  .left-section {
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -239,8 +323,8 @@ input[type="submit"]:hover {
   .right-section {
     float: left;
     width: 100%;
-    padding-left: 35px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     box-sizing: border-box;
     text-align: justify;
   }
@@ -248,10 +332,38 @@ input[type="submit"]:hover {
   .footer {
     text-align: center;
     margin-top: 15px;
+    font-size: 80%;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 689px) and (min-width: 524.1px) {
+  .left-section {
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .right-section {
+    float: left;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    text-align: justify;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 80%;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 812px) {
   .left-section {
     float: left;
     width: 65%;
@@ -263,8 +375,8 @@ input[type="submit"]:hover {
   .right-section {
     float: left;
     width: 35%;
-    padding-left: 35px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     box-sizing: border-box;
     text-align: justify;
   }
@@ -272,10 +384,11 @@ input[type="submit"]:hover {
   .footer {
     text-align: center;
     margin-top: 15px;
+    font-size: 80%;
   }
 }
 
-@media only screen and (max-width: 899px) and (min-width: 420px) {
+@media only screen and (max-width: 899px) {
   .left-section {
     float: left;
     padding-left: 20px;
@@ -287,8 +400,8 @@ input[type="submit"]:hover {
   .right-section {
     float: left;
     width: 100%;
-    padding-left: 35px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     box-sizing: border-box;
     text-align: justify;
   }
@@ -299,20 +412,22 @@ input[type="submit"]:hover {
   }
 }
 
-@media only screen and (max-width: 1250px) and (min-width: 900px) {
+@media only screen and (max-width: 1250px) {
   .left-section {
     float: left;
-    padding-left: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
     /* width: 100%; */
-    padding: 30px;
+    /* padding: 30px; */
     box-sizing: border-box;
   }
 
   .right-section {
     float: left;
     /* width: 100%; */
-    padding-left: 35px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     box-sizing: border-box;
     text-align: justify;
   }
